@@ -5,14 +5,25 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container{
+    background-color: lightyellow;
+    padding: 10px;
+}
+
 h1 {
     color: rgb(255, 64, 0);
 }
 
-h3 {
+.container h3 {
     background-color: aquamarine;
     color: darkmagenta;
     padding: 1%;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.8em;
 }
 
 /* .container {
@@ -25,4 +36,116 @@ p {
     font-size: 1.4rem;
     font-weight: bolder;
     line-height: 1.2em;
+}
+
+#second-p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkmagenta;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+#box-model{
+    background-color: lightgray;
+    width: 300px;
+    border: 15px solid darkblue;
+    padding: 50px;
+    /* margin: 20px; */
+
+    /* margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px; */
+
+    margin: 5px 10px 5px 10px;
+
+    margin: 5px 10px;
+}
+
+.categories {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    list-style: none;
+}
+
+.categories a {
+    text-decoration: none;
+    color: black;
+}
+
+.categories a:hover {
+    color: red;
+}
+
+.categories li {
+    padding: 6px 0;
+    border-bottom: 1px dotted #333;
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+    font-weight: bolder;
+}
+
+.my-form #name, .my-form #email, .my-form #message {
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#main__block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+#side__bar{
+    float: right;
+    width: 30%;
+    padding: 15px;
+    border: 1px solid gray;
+    box-sizing: border-box;
 }
