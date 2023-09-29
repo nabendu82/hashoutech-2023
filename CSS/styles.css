@@ -149,3 +149,59 @@ p {
     border: 1px solid gray;
     box-sizing: border-box;
 }
+
+.position-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url('./images/grab.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.large-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url('./images/unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.position-box h1 {
+    position: absolute;
+    top: 140px;
+    left: 200px;
+}
+
+.position-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+}
+
+.fixed-button{
+    position: fixed;
+    top: 20px;
+}
+
+.my-list li:first-child {
+    background: rebeccapurple;
+}
+
+.my-list li:last-child {
+    background: royalblue;
+}
+
+.my-list li:nth-child(5) {
+    background: yellowgreen;
+}
+
+.dynamic-list li:nth-child(even) {
+    background: yellowgreen;
+}
+
+.dynamic-list li:nth-child(odd) {
+    background: rgb(220, 233, 194);
+}
