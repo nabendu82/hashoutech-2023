@@ -88,3 +88,87 @@ header a:hover {
 #boxes .box img {
     width: 90px;
 }
+
+footer {
+    padding: 16px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ffc600;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: bolder;
+}
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+.dark {
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.button_1{
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc600;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.button_1:hover{
+    background-color: #35424a;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+    header .branding, header nav, #boxes .box, aside#sidebar, article#main-col {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcase h1 {
+        font-size: 25px;
+    }
+
+    #showcase p {
+        font-size: 16px;
+    }
+
+    aside#sidebar {
+        margin-bottom: 100px;
+    }
+
+    #boxes .box:nth-child(3) {
+        margin-bottom: 80px;
+    }
+}
