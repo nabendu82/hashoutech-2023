@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.box{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+.box1 {background: red;}
+.box2 {background: green;}
+.box3 {background: yellow;}
+.box4 {background: brown;}
+.box5 {background: orange;}
+.box6 {background: purple;}
+.box7 {background: black;}
+.box8 {background: magenta;}
+.box9 {background: silver;}
+.box10 {background: teal;}
+
+.box1 {font-size: 30px;}
+.box2 {font-size: 60px;}
+.box3 {font-size: 90px;}
+.box4 {font-size: 120px;}
+.box5 {font-size: 160px;}
+.box6 {font-size: 180px;}
+.box7 {font-size: 160px;}
+.box8 {font-size: 120px;}
+.box9 {font-size: 90px;}
+.box10 {font-size: 60px;}
+
+.container {
+    display: flex;
+    border: 3px solid black;
+    height: 100vh;
+    align-items: baseline;
+}
