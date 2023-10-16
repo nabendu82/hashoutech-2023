@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+  --light-red: 0, 100%, 67%;
+  --orangey-yellow: 39, 100%, 56%;
+  --green-teal: 166, 100%, 37%;
+  --cobalt-blue: 234, 85%, 45%;
+  --light-slate-blue-background: hsl(252, 100%, 67%);
+  --light-royal-blue-background: hsl(241, 81%, 54%);
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: 241, 100%, 89%;
+  --dark-gray-blue: 224, 30%, 27%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  max-inline-size: 500px;
+  margin-inline: auto;
+  display: grid;
+}
+
+.result {
+  text-align: center;
+  color: hsl(var(--light-lavender));
+  background-image: linear-gradient(
+    var(--light-slate-blue-background),
+    var(--light-royal-blue-background)
+  );
+  padding-block: 1.5rem 2.2rem;
+  padding-inline: 3rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.your-result {
+  font-size: 1.125rem;
+}
+
+.score {
+  background-image: linear-gradient(var(--violet-blue-circle), var(--persian-blue-circle));
+  inline-size: 9rem;
+  block-size: 9rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  margin-block: 1.6rem;
+}
+
+.score .score-top {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.score .score-bottom {
+  color: hsla(var(--light-lavender), 0.6);
+}
+
+.result p.great {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding-block-end: 0.6rem;
+}
+
+.result p.desc {
+  color: hsla(var(--light-lavender), 0.9);
+}
+
+.summary {
+  padding: 1.5rem 2rem;
+}
+
+.summary h2 {
+  padding-block-end: 0.6rem;
+  color: var(--dark-gray-blue);
+}
+
+.summary-list > * {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-block: 1rem;
+  border-radius: 0.5rem;
+}
+
+.summary-list p {
+  margin-inline-end: auto;
+}
+
+.summary-list-score {
+  color: hsl(var(--dark-gray-blue));
+  font-weight: 700;
+}
+
+.summary-list-score span {
+  color: hsla(var(--dark-gray-blue), 0.6);
+  margin-inline-start: 0.46em;
+}
+
+.reaction {
+  background-color: hsla(var(--light-red), 0.1);
+  color: hsl(var(--light-red));
+}
+
+.memory {
+  background-color: hsla(var(--orangey-yellow), 0.1);
+  color: hsl(var(--orangey-yellow));
+}
+
+.verbal {
+  background-color: hsla(var(--green-teal), 0.1);
+  color: hsl(var(--green-teal));
+}
+
+.visual {
+  background-color: hsla(var(--cobalt-blue), 0.1);
+  color: hsl(var(--cobalt-blue));
+}
+
+.btn {
+  color: var(--white);
+  background-color: hsl(var(--dark-gray-blue));
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  padding-block: 1rem;
+  margin-block: 1.6rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: 50em) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100vh;
+    font-size: 1.125rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    max-inline-size: 45.875rem;
+    box-shadow: 1rem 1rem 3rem hsla(var(--cobalt-blue), 0.1);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  .result {
+    padding-block: 2.4rem 3.5rem;
+    padding-inline: 3.6rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  .your-result {
+    font-size: 1.5rem;
+  }
+
+  .score {
+    inline-size: 12.5rem;
+    block-size: 12.5rem;
+    margin-block: 2.4rem 1.5rem;
+  }
+
+  .result p.great {
+    font-size: 2rem;
+    padding-block-end: 0.9rem;
+  }
+
+  .score p:first-of-type {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  .summary {
+    padding-inline: 2.6rem;
+  }
+
+  .summary h2 {
+    font-size: 1.5rem;
+    padding-block: 0.8rem;
+  }
+
+  .btn {
+    margin-block-start: 2.8rem;
+    padding-block: 1.1rem;
+  }
+
+  .btn:hover {
+    background: linear-gradient(
+      var(--light-slate-blue-background),
+      var(--light-royal-blue-background)
+    );
+  }
+}
