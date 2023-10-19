@@ -99,27 +99,112 @@
 // console.log(array1.sort(compareNumbers));
 
 //Objects
-const person = {
-    firstName: 'Nabendu',
-    'Last Name': 'Biswas',
-    age: 41,
-    isDeveloper: true,
-    hobbies: ['coding', 'blogging', 'youtubing'],
-    address: {
-        hno: 95,
-        city: 'Bhopal',
-        state: 'MP'
-    }
+// const person = {
+//     firstName: 'Nabendu',
+//     'Last Name': 'Biswas',
+//     age: 41,
+//     isDeveloper: true,
+//     hobbies: ['coding', 'blogging', 'youtubing'],
+//     address: {
+//         hno: 95,
+//         city: 'Bhopal',
+//         state: 'MP'
+//     }
+// }
+
+// console.log(person);
+// console.log(person.firstName); //Dot notation
+// console.log(person['Last Name']); //Bracket notation
+// console.log(person.hobbies[2]);
+// console.log(person.address.city);
+
+// console.log(Object.keys(person));
+// console.log(Object.values(person));
+
+//Loops
+//Traditional for loop
+// for(let i=0; i<=10; i++) {
+//     console.log(`Loop Number - ${i}`);
+// }
+
+//while loop
+// let i = 0;
+// while(i<=10) {
+//     console.log(`Loop Number - ${i}`);
+//     i++;
+// }
+
+//do-while loop
+// let i = 0;
+// do {
+//     console.log(`Loop Number - ${i}`);
+//     i+=11;
+// } while(i<=10)
+
+//Arrays of object
+// const lang = [
+//     {id: 1, name: 'Pascal', year: 1970},
+//     {id: 2, name: 'C', year: 1972},
+//     {id: 3, name: 'C++', year: 1985},
+//     {id: 4, name: 'Java', year: 1995},
+//     {id: 5, name: 'JavaScript', year: 1996},
+//     {id: 6, name: 'Kotlin', year: 2011}
+// ];
+
+//Traditional for loop
+// for(let i=0; i<lang.length; i++) {
+//     console.log(lang[i].id)
+// }
+
+//for..of loop
+// for(let l of lang) {
+//     console.log(l.name)
+// }
+
+//forEach
+// lang.forEach(item => console.log(item.year));
+
+//Conditionals
+// const x = '10';
+
+// if(x == 10){
+//     console.log('x is 10');
+// }
+
+// const y = '20';
+// if(y === 20) {
+//     console.log('y is 20');
+// } else {
+//     console.log('y is string 20');
+// }
+
+//if-else if-else
+// const z = 79;
+// if(z > 100) {
+//     console.log('z is greater then 100');
+// } else if(z > 80) {
+//     console.log('z is greater then 80');
+// } else if(z > 60) {
+//     console.log('z is greater then 60');
+// } else if(z > 40) {
+//     console.log('z is greater then 40');
+// } else {
+//     console.log('z is lesser then 40');
+// }
+
+//OR and AND operatores
+const x = 20;
+const y = 30;
+
+if(x === 20 || y === 40) {
+    console.log('Any one of the statement is true')
 }
 
-console.log(person);
-console.log(person.firstName); //Dot notation
-console.log(person['Last Name']); //Bracket notation
-console.log(person.hobbies[2]);
-console.log(person.address.city);
+if(x === 20 && y === 30) {
+    console.log('Both of the statement are true')
+}
 
-console.log(Object.keys(person));
-console.log(Object.values(person));
+
 
 
 
