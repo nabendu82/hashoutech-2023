@@ -193,16 +193,78 @@
 // }
 
 //OR and AND operatores
-const x = 20;
-const y = 30;
+// const x = 20;
+// const y = 30;
 
-if(x === 20 || y === 40) {
-    console.log('Any one of the statement is true')
+// if(x === 20 || y === 40) {
+//     console.log('Any one of the statement is true')
+// }
+
+// if(x === 20 && y === 30) {
+//     console.log('Both of the statement are true')
+// }
+
+//Ternary operator
+// const z = 10;
+// let color;
+
+// if(z > 10){
+//     color = 'red';
+// } else {
+//     color = 'blue';
+// }
+
+// console.log(color);
+// //Above if-else converted to ternary
+// const color2 = z > 9 ? 'red' : 'blue';
+// console.log(color2);
+
+//Switch statement
+// const color = 'green';
+
+// switch (color) {
+//     case 'red':
+//         console.log('color is red');
+//         break;
+//     case 'green':
+//     case 'orange':
+//         console.log('color is green or orange');
+//         break;
+//     default:
+//         console.log('No color matched');
+// }
+
+//Functions
+
+//Method #1 - Function decleration
+function addNums(num1, num2) {
+    console.log(num1 + num2);
 }
 
-if(x === 20 && y === 30) {
-    console.log('Both of the statement are true')
+addNums(20, 39);
+
+//Method #2 - Function expression
+const multiNums = function(num1, num2) {
+    return num1 * num2;
 }
+
+console.log(multiNums(20, 39));
+
+//Method #3 - Arrow function
+const modNums = (num1, num2) => {
+    return num1 % num2;
+}
+
+console.log(modNums(50, 39));
+
+//Method #4 - Condensed Arrow function
+const divNum = num1 => num1 / 7;
+
+console.log(divNum(50));
+
+
+
+
 
 
 
