@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Converter</h1>
+        <form>
+            <h4 class="display-5 text-left mb-3">Weight</h4>
+            <div class="form-group">
+                <input id="kgsInput" type="number" class="form-control form-control-lg"
+                    placeholder="Enter Kilograms...">
+            </div>
+        </form>
+        <div class="card card-primary mb-4">
+            <div class="card-block">
+                <h4>Pounds:</h4>
+                <div id="lbsOutput"></div>
+            </div>
+        </div>
+        <form>
+            <h4 class="display-5 text-left mb-3">Measurement</h4>
+            <div class="form-group">
+                <input id="feetInput" type="number" class="form-control form-control-lg" placeholder="Enter Feet...">
+            </div>
+        </form>
+        <div class="card card-success mb-4">
+            <div class="card-block">
+                <h4>Centimeters:</h4>
+                <div id="cmsOutput"></div>
+            </div>
+        </div>
+        <form>
+            <h4 class="display-5 text-left mb-3">Temperature</h4>
+            <div class="form-group">
+                <input id="celciusInput" type="number" class="form-control form-control-lg"
+                    placeholder="Enter Celcius...">
+            </div>
+        </form>
+        <div class="card card-danger mb-4">
+            <div class="card-block">
+                <h4>Fahrenheit:</h4>
+                <div id="fahrenOutput"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
