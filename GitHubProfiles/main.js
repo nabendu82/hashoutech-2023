@@ -8,6 +8,25 @@ const getUser = async username => {
     const res = await fetch(API_URL + username);
     const data = await res.json();
     createUserCard(data);
+    getRepos(username);
+}
+
+const getRepos = async username => {
+    const res = await fetch(API_URL + username + "/repos");
+    const data = await res.json();
+    addReposToCard(data);
+}
+
+function addReposToCard(repos) {
+    const reposEl = document.getElementById("repos");
+    repos.forEach((repo) => {
+            const repoEl = document.createElement("a");
+            repoEl.classList.add("repo");
+            repoEl.href = repo.html_url;
+            repoEl.target = "_blank";
+            repoEl.innerText = repo.name;
+            reposEl.appendChild(repoEl);
+        });
 }
 
 function createUserCard(user) {
@@ -32,5 +51,14 @@ function createUserCard(user) {
     `
     main.innerHTML = cardHTML;
 }
+
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    const user = search.value;
+    if(user){
+        getUser(user);
+        search.value = "";
+    }
+})
 
 getUser("nabendu82")
